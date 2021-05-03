@@ -1,0 +1,12 @@
+input{
+    width: 20rem;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.5rem;
+    margin: 10px 0px;
+    border: 2px solid var(#ebebeb);
+    color: var(#404040);
+}
+
+
