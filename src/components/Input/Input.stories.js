@@ -12,7 +12,7 @@ export const Textfield = Template.bind({});
 Textfield.args = {
    input:{ 
     type:'text', 
-    placeholder:'text field',
+    placeholder:'Please Enter Username',
     name:'username',
     label:'UserName',
     value:'ashwini'
@@ -23,7 +23,7 @@ export const Emailfield = Template.bind({});
 Emailfield.args = {
     input:{ 
     type:'email', 
-    placeholder:'Email',
+    placeholder:'Please Enter Email',
     name:'email',
     label:'Email',
     value:'ashwini.chougule@gmail.com'
@@ -34,7 +34,7 @@ export const Passwordfield = Template.bind({});
 Passwordfield.args = {
     input:{ 
     type:'password', 
-    placeholder:'password',
+    placeholder:'Please Enter Password',
     name:'password',
     label:'Password',
     value:'123'

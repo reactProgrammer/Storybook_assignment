@@ -9,8 +9,8 @@ export default function  Inputgroup({ inputdata}) {
     
     return (
         <div className="form_input">
-           <label>{inputdata.input.label}</label>  
-           <Input input={inputdata.input}/>
+           <label>{inputdata.label}</label>  
+           <Input input={inputdata}/>
         </div>
     );
   };
