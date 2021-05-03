@@ -12,6 +12,6 @@ const Template=args=><Form {...args}/>
 
 export const LoginForm = Template.bind({});
 LoginForm.args={
-    Inputgroupsdata:[{...Inputgroups.userName.args.inputdata},{...Inputgroups.password.args.inputdata},],
+    Inputgroupsdata:[{...Inputgroups.userName.args},{...Inputgroups.password.args},],
     button:{...Button.Default.args}
 }

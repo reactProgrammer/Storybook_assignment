@@ -13,15 +13,15 @@ const Template=args=><Inputgroup {...args}/>
 
 export const userName = Template.bind({});
 userName.args={
-    inputdata:{...Inputstories.Textfield.args.input,id:1}
+    ...Inputstories.Textfield.args,id:1
 }
 
 export const email = Template.bind({});
 email.args={
-    inputdata: {...Inputstories.Emailfield.args.input,id:2}
+     ...Inputstories.Emailfield.args,id:2
 }
 
 export const password = Template.bind({});
 password.args={
-    inputdata: {...Inputstories.Passwordfield.args.input,id:3}
+   ...Inputstories.Passwordfield.args,id:3
 }

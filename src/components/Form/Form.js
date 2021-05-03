@@ -11,7 +11,8 @@ export default function  Form({ Inputgroupsdata,button}) {
            <h1>ACCOUNT LOGIN</h1>
             {
                 Inputgroupsdata.map(data=>(
-                    <Inputgroup inputdata={data} key={data.id}/>
+                    <Inputgroup type={data.type} placeholder={data.placeholder}
+                    name={data.name} value={data.value} key={data.id} label={data.label}/>
                 ))
             }  
             <Button  primary={button.primary} label={button.label} backgroundColor={button.backgroundColor}

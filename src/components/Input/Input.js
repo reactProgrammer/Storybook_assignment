@@ -15,32 +15,32 @@ import './input.css';
 }
 */
 
-export default function Input({ input}) {
+export default function Input({type,placeholder,name,value}) {
   return (
        <input
-         type={input.type}
-         placeholder={input.placeholder}
-         name={input.name}
-         value={input.value}
+         type={type}
+         placeholder={placeholder}
+         name={name}
+         value={value}
        />
   );
 }
 
 Input.propTypes = {
-  input:PropTypes.shape({
+  /*input:PropTypes.shape({*/
     type:PropTypes.oneOf(['email','password','text']).isRequired, 
     placeholder:PropTypes.string,
     name:PropTypes.string,
     value:PropTypes.string
- })
+ /*})*/
 };
 
 
 Input.defaultProps = {
- input:PropTypes.shape({ 
-    type:'text', 
+ /*input:PropTypes.shape({ */
+    type:PropTypes.oneOf(['email','password','text']).isRequired, 
     placeholder:'',
     name:'',
     Value:''
- })
+ /*})*/
 };

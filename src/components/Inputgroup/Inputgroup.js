@@ -1,20 +1,19 @@
 import React from 'react';
 import Input from '../Input/Input';
 
-export default function  Inputgroup({ inputdata}) {
-    console.log(inputdata);
-    if (inputdata.length === 0) {
-        return <div className="form_input">empty</div>;
-    }
+export default function  Inputgroup({ type,placeholder,name,value,label,id}) {
     
     return (
         <div className="form_input">
-           <label>{inputdata.label}</label>  
-           <Input input={inputdata}/>
+           <label>{label}</label>  
+           <Input type={type} placeholder={placeholder}
+                  name={name} value={value}/>
         </div>
     );
   };
 
 
+  
+ 
 
 
