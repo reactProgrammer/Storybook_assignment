@@ -3,7 +3,9 @@
     margin: 1rem;
     padding: 2rem;
 }
-
+h1{
+    font-size:1rem;
+}
 .Login_Box {
     width: 25vw;
     display: flex;

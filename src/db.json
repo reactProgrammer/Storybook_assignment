@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "username": "abc",
+      "email" :"abc@gmail.com",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4?v=4",
+      "param":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum, ante non convallis fermentum, diam sem tincidunt velit, in volutpat odio turpis quis felis. Aliquam erat volutpat. Pellentesque et dictum nisi. Mauris purus eros.",
+      "id": 1
+    },
+    {
+      "username": "pqr",
+      "email" :"pqr@gmail.com",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3?v=4",
+      "param":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum, ante non convallis fermentum, diam sem tincidunt velit, in volutpat odio turpis quis felis. Aliquam erat volutpat. Pellentesque et dictum nisi. Mauris purus eros.",
+      "id": 2
+    },
+    {
+      "username": "xyz",
+      "email" :"xyz@gmail.com",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6?v=4",
+      "param":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum, ante non convallis fermentum, diam sem tincidunt velit, in volutpat odio turpis quis felis. Aliquam erat volutpat. Pellentesque et dictum nisi. Mauris purus eros.",
+      "id": 3
+    },
+    {
+      "username": "ghj",
+      "email" :"ghj@gmail.com",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6?v=4",
+      "param":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum, ante non convallis fermentum, diam sem tincidunt velit, in volutpat odio turpis quis felis. Aliquam erat volutpat. Pellentesque et dictum nisi. Mauris purus eros.",
+      "id": 4
+    }
+  ]
+}

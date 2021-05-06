@@ -1,20 +1,9 @@
-import {Primary,Secondary,CustomeColor} from './Button.stories';
-import {render,screen} from '@testing-library/react';
+import React from 'react';
+import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom/extend-expect';
+import { Primary } from './Button.stories';
 
-test('Should render primary button',()=>{
-    render(<Primary {...Primary.args}/>);
-    expect(screen.getByRole('button')).toHaveTextContent(/Button/i);
+it('renders the button in the primary state', () => {
+  render(<Primary {...Primary.args} />);
+  expect(screen.getByRole('button')).toHaveTextContent('Primary');
 });
-
-
-test('Should render secondary button',()=>{
-    render(<Secondary {...Secondary.args}/>);
-    expect(screen.getByRole('button')).toHaveTextContent(/Button/i);
-});
-
-test('should render a custom color',()=>{
-    render(<CustomeColor {...CustomeColor.args}/>);
-    expect(screen.getByRole("button")).toHaveStyle(
-        `background-color:${CustomeColor.args.backgroundColor}`
-    );
-})

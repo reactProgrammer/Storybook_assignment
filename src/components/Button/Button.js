@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './button.css';
 
-
 export default function Button ({ primary, backgroundColor, size, label, ...props }){
   const mode = primary ? 'sb-button--primary' : 'sb-button--secondary';
   return (

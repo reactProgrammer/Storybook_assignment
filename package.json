@@ -13,24 +13,32 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "@babel/preset-react": "^7.13.13",
+    "@storybook/addon-events": "^6.2.9",
+    "@storybook/addon-jest": "^6.2.9",
+    "@storybook/addon-knobs": "^6.2.9",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.21.1",
+    "fetch-mock": "^9.11.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-redux": "^7.2.4",
     "react-scripts": "4.0.1",
+    "redux": "^4.1.0",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "test:coverage":"react-scripts test --watchAll-false --coverage",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "json-server": "json-server --watch src/db.json --port 3337",
+    "test": "jest"
   },
-  "jest":{
-    "collectCoverageFrom":[
+  "jest": {
+    "collectCoverageFrom": [
       "<rootDir>/src/components/**/*.{js,jsx}",
       "!**/node_modules/**",
       "!**/*.stories.{js,jsx}"
@@ -55,13 +63,26 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "^6.2.9",
     "@storybook/addon-actions": "^6.2.8",
     "@storybook/addon-essentials": "^6.2.8",
-    "@storybook/addon-links": "^6.2.8",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/addon-storyshots": "^6.2.9",
     "@storybook/node-logger": "^6.2.8",
     "@storybook/preset-create-react-app": "^3.1.7",
     "@storybook/react": "^6.2.8",
     "@storybook/testing-react": "0.0.10",
-    "@testing-library/react": "^11.2.6"
+    "@testing-library/react": "^11.2.6",
+    "msw": "^0.28.2",
+    "react-test-renderer": "^16.14.0",
+    "storybook-axios": "^1.0.1",
+    "@babel/core": "^7.11.4",
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "@babel/plugin-transform-react-jsx-self": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }

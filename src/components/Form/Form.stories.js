@@ -13,5 +13,13 @@ const Template=args=><Form {...args}/>
 export const LoginForm = Template.bind({});
 LoginForm.args={
     Inputgroupsdata:[{...Inputgroups.userName.args},{...Inputgroups.password.args},],
-    button:{...Button.Default.args}
+    button:{...Button.Default.args},
+    header:"ACCOUNT LOGIN"
+}
+
+export const RegistrationForm = Template.bind({});
+RegistrationForm.args={
+    Inputgroupsdata:[{...Inputgroups.email.args},{...Inputgroups.userName.args},{...Inputgroups.password.args},],
+    button:{...Button.Registered.args},
+    header:"REGISTRATION FORM"
 }
