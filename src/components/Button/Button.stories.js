@@ -31,7 +31,7 @@ Primary.args = {
 export const Default = Template.bind({});
 Default.args = {
   primary: true,
-  label:'Login',
+  label:'Login button',
   backgroundColor:'#333333'
 };
 

@@ -35,7 +35,8 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "json-server": "json-server --watch src/db.json --port 3337",
-    "test": "jest"
+    "test": "jest",
+    "chromatic": "npx chromatic --project-token=1dd794b8edf2"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -63,6 +64,11 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "@babel/plugin-transform-react-jsx-self": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
     "@storybook/addon-a11y": "^6.2.9",
     "@storybook/addon-actions": "^6.2.8",
     "@storybook/addon-essentials": "^6.2.8",
@@ -73,14 +79,10 @@
     "@storybook/react": "^6.2.8",
     "@storybook/testing-react": "0.0.10",
     "@testing-library/react": "^11.2.6",
+    "chromatic": "^5.9.0",
     "msw": "^0.28.2",
     "react-test-renderer": "^16.14.0",
-    "storybook-axios": "^1.0.1",
-    "@babel/core": "^7.11.4",
-    "@babel/plugin-transform-react-jsx": "^7.10.4",
-    "@babel/plugin-transform-react-jsx-self": "^7.10.4",
-    "@babel/preset-env": "^7.11.0",
-    "@babel/preset-react": "^7.10.4"
+    "storybook-axios": "^1.0.1"
   },
   "msw": {
     "workerDirectory": "public"
