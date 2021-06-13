@@ -36,7 +36,7 @@
     "build-storybook": "build-storybook -s public",
     "json-server": "json-server --watch src/db.json --port 3337",
     "test": "jest",
-    "chromatic": "chromatic CHROMATIC_PROJECT_TOKEN --exit-zero-on-changes"
+    "chromatic": "chromatic --project-token CHROMATIC_PROJECT_TOKEN --exit-zero-on-changes"
   },
   "jest": {
     "collectCoverageFrom": [
