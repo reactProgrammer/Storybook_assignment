@@ -1,10 +1,10 @@
 # .github/workflows/chromatic.yml
 
 # Workflow name
-name: 'Chromatic'
+name: 'Chromatic Deployment'
 
 # Event for the workflow
-on: push
+on: pull_request
 
 # List of jobs
 jobs:
@@ -17,7 +17,7 @@ jobs:
       - name: Install dependencies
         run: yarn
         # 👇 Adds Chromatic as a step in the workflow
-      - name: Publish to Chromatic
+      - name: Deploy to Chromatic
         uses: chromaui/action@v1
         # Chromatic GitHub Action options
         with:
