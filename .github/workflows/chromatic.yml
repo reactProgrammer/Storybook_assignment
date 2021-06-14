@@ -8,6 +8,10 @@ on: pull_request
 # List of jobs
 jobs:
   chromatic-deployment:
+
+    # Operating System
+    runs-on: MS-Windows – 98/XP/Vista
+    # Job steps
     steps:
         # Other steps
       
