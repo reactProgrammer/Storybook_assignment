@@ -10,7 +10,9 @@ export default function Button ({ primary, backgroundColor, size, label, ...prop
          type="button"
          className={['sb-button', `sb-button--${size}`, mode].join(' ')}
          style={backgroundColor && { backgroundColor }}
-         test before it {...props}
+
+         {...props} test before add
+
      >
         {label} label
      </button>
