@@ -10,7 +10,7 @@ on: pull_request
 jobs:
   chromatic-deployment:
     # Operating System
-    runs-on: MS-Windows – 98/XP/Vista
+    runs-on: Windows 10 Enterprise
     # Job steps
     steps:
       - uses: actions/checkout@v1
