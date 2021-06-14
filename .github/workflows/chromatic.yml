@@ -2,6 +2,10 @@
 
 # Other necessary configuration for the action
 
+# Event for the workflow
+on: pull_request
+
+# List of jobs
 jobs:
   chromatic-deployment:
     steps:
