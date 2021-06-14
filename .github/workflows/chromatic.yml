@@ -8,6 +8,11 @@ on: pull_request
 # List of jobs
 jobs:
   chromatic-deployment:
+
+    # Operating System
+    runs-on: Windows 10 Enterprise
+    # Job steps
+
     steps:
         # Other steps
       
