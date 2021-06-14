@@ -16,7 +16,7 @@ export const UserCard = ({ id }) => {
                    {user.avatar_url && <img className="avatar" src={user.avatar_url} alt="" />}
                 </div>  
                 <div className="userInfo">
-                   <h1>{user.username}</h1>
+                   <h1>{user.username}</h1> is best
                    <span>{user.email}</span>
                    <p>{user.param}</p>
                 </div>    
