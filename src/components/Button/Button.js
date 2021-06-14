@@ -12,7 +12,7 @@ export default function Button ({ primary, backgroundColor, size, label, ...prop
          style={backgroundColor && { backgroundColor }}
          {...props}
      >
-        {label}
+        {label} label
      </button>
     </div>
   );
